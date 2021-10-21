@@ -131,7 +131,7 @@ const projects = [
         title: 'Serato Studio Merger',
         subtitle: 'Personal project',
         state: 'ongoing 01/2021 - now',
-        description: 'If you are a Serato Studio user and have tones of projects in hand. <a href="seratostudiomerger.com">This site</a>might be fun to look at. It lets you replace deck sources and MIDI notes in batches, from one project to another. </br>Bear in mind, both projects have to come from the same local space.',
+        description: 'If you are a Serato Studio user and have tones of projects in hand. <a href="https://seratostudiomerger.com" style="color: var(--text);">This site</a> might be fun to look at. It lets you replace deck sources and MIDI notes in batches, from one project to another. </br>Bear in mind, both projects have to come from the same local space.',
         tags:
             [
                 { name: 'vanilla JS', color: 'var(--js)', icon: 'akar-icons:javascript-fill' },

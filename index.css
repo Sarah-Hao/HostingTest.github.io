@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --background: rgb(46, 46, 46);
+    --background: rgb(0, 0, 0);
     --text: rgb(164, 164, 164);
-    --text-light: rgb(100, 100, 100);
+    --text-light: rgb(87, 87, 87);
     --primary1: rgb(163, 163, 163);
     --primary2: rgb(116, 116, 116);
     --secondary1: rgb(132, 97, 182);
     --secondary2: rgb(132, 97, 182);
-    --inactive: rgb(55, 55, 55);
+    --inactive: rgb(66, 66, 66);
 
     --cplusplus: #1e66ec;
     --qt: #1c8a39;
@@ -59,6 +59,8 @@ footer {
     align-items: start;
 
     background-color: var(--background);
+    background-image: url(./src/img/background.png);
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     font: var(--tertiary-light);

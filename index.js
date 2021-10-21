@@ -35,102 +35,6 @@ const pageObserver = new IntersectionObserver(
 // ------------------------ Data ----------------------------------
 const projects = [
     {
-        id: 'serato',
-        constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
-        title: 'Serato',
-        subtitle: 'Junior software engineer intern',
-        state: 'ended 11/2019 - 2/2020',
-        description: 'My role was mainly to help with the investigation, implementation and testing of the core product from within a small scrum team. Serato was kind enough to let me try out diffrent tasks and even involve me in the actual development process. </br> </br>During the 3 months internship, I had investigated issue and submited a solution, learnt to implement UI elements using Qt framework, participated in the sprint planning and review. At the end, one of the feature our team developed was released successfully.',
-        tags:
-            [
-                { name: 'C++', color: 'var(--cplusplus)', icon: 'bx:bxl-c-plus-plus' },
-                { name: 'Qt', color: 'var(--qt)', icon: 'file-icons:qt' },
-                { name: 'Scrum', color: 'var(--scrum)', icon: null },
-            ],
-        model:
-        {
-            newWidth: (screenSmall) ? 200 : 500,
-            backgroundColor: 'rgb(49, 49, 49)',
-            observer: pageObserver,
-            parent:
-            {
-                src: './src/img/serato/seratoStudio.png',
-                width: 9574,
-                height: 5984,
-                left: -100,
-                top: 0,
-                transform: 'rotateX(-20deg) rotateY(-30deg)',
-            },
-            layers:
-            {
-                window: {
-                    src: './src/img/serato/window.png',
-                    width: 4272,
-                    height: 3499,
-                    left: 51,
-                    top: 270,
-                    translateZ: 10
-                },
-                deckMix: {
-                    src: './src/img/serato/deckMix.png',
-                    width: 372,
-                    height: 3491,
-                    left: 4361,
-                    top: 266,
-                    translateZ: 10
-                },
-                keyMix: {
-                    src: './src/img/serato/keyMix.png',
-                    width: 372,
-                    height: 3493,
-                    left: 4840,
-                    top: 263,
-                    translateZ: 10
-                },
-                piano: {
-                    src: './src/img/serato/piano.png',
-                    width: 4250,
-                    height: 3492,
-                    left: 5264,
-                    top: 266,
-                    translateZ: 10
-                },
-                keyFx: {
-                    src: './src/img/serato/keyFx.png',
-                    width: 4681,
-                    height: 322,
-                    left: 52,
-                    top: 3808,
-                    translateZ: 10
-                },
-                deckFx: {
-                    src: './src/img/serato/deckFx.png',
-                    width: 4681,
-                    height: 322,
-                    left: 4840,
-                    top: 3808,
-                    translateZ: 10
-                },
-                scenePlayer: {
-                    src: './src/img/serato/scenePlayer.png',
-                    width: 8990,
-                    height: 1536,
-                    left: 531,
-                    top: 4235,
-                    translateZ: 10
-                },
-                library: {
-                    src: './src/img/serato/library.png',
-                    width: 372,
-                    height: 1534,
-                    left: 53,
-                    top: 4237,
-                    translateZ: 10
-                },
-            },
-        },
-    },
-    {
         id: 'golf',
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'Boost 360 Golf Academy',
@@ -227,7 +131,7 @@ const projects = [
         title: 'Serato Studio Merger',
         subtitle: 'Personal project',
         state: 'ongoing 01/2021 - now',
-        description: '',
+        description: 'If you are a Serato Studio user and have tones of projects in hand. <a href="seratostudiomerger.com">This site</a>might be fun to look at. It lets you replace deck sources and MIDI notes in batches, from one project to another. </br>Bear in mind, both projects have to come from the same local space.',
         tags:
             [
                 { name: 'vanilla JS', color: 'var(--js)', icon: 'akar-icons:javascript-fill' },
@@ -262,7 +166,102 @@ const projects = [
             },
         },
     },
-
+    {
+        id: 'serato',
+        constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
+        title: 'Serato',
+        subtitle: 'Junior software engineer intern',
+        state: 'ended 11/2019 - 2/2020',
+        description: 'My role was mainly to help with the investigation, implementation and testing of the core product from within a small scrum team. Serato was kind enough to let me try out diffrent tasks and even involve me in the actual development process. </br> </br>During the 3 months internship, I had investigated issue and submited a solution, learnt to implement UI elements using Qt framework, participated in the sprint planning and review. At the end, one of the feature our team developed was released successfully.',
+        tags:
+            [
+                { name: 'C++', color: 'var(--cplusplus)', icon: 'bx:bxl-c-plus-plus' },
+                { name: 'Qt', color: 'var(--qt)', icon: 'file-icons:qt' },
+                { name: 'Jira', color: 'var(--jira)', icon: 'fa-brands:jira' },
+            ],
+        model:
+        {
+            newWidth: (screenSmall) ? 200 : 500,
+            backgroundColor: 'rgb(49, 49, 49)',
+            observer: pageObserver,
+            parent:
+            {
+                src: './src/img/serato/seratoStudio.png',
+                width: 9574,
+                height: 5984,
+                left: -100,
+                top: 0,
+                transform: 'rotateX(-20deg) rotateY(-30deg)',
+            },
+            layers:
+            {
+                window: {
+                    src: './src/img/serato/window.png',
+                    width: 4272,
+                    height: 3499,
+                    left: 51,
+                    top: 270,
+                    translateZ: 10
+                },
+                deckMix: {
+                    src: './src/img/serato/deckMix.png',
+                    width: 372,
+                    height: 3491,
+                    left: 4361,
+                    top: 266,
+                    translateZ: 10
+                },
+                keyMix: {
+                    src: './src/img/serato/keyMix.png',
+                    width: 372,
+                    height: 3493,
+                    left: 4840,
+                    top: 263,
+                    translateZ: 10
+                },
+                piano: {
+                    src: './src/img/serato/piano.png',
+                    width: 4250,
+                    height: 3492,
+                    left: 5264,
+                    top: 266,
+                    translateZ: 10
+                },
+                keyFx: {
+                    src: './src/img/serato/keyFx.png',
+                    width: 4681,
+                    height: 322,
+                    left: 52,
+                    top: 3808,
+                    translateZ: 10
+                },
+                deckFx: {
+                    src: './src/img/serato/deckFx.png',
+                    width: 4681,
+                    height: 322,
+                    left: 4840,
+                    top: 3808,
+                    translateZ: 10
+                },
+                scenePlayer: {
+                    src: './src/img/serato/scenePlayer.png',
+                    width: 8990,
+                    height: 1536,
+                    left: 531,
+                    top: 4235,
+                    translateZ: 10
+                },
+                library: {
+                    src: './src/img/serato/library.png',
+                    width: 372,
+                    height: 1534,
+                    left: 53,
+                    top: 4237,
+                    translateZ: 10
+                },
+            },
+        },
+    },
 ];
 
 const songs = [

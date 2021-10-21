@@ -11,10 +11,7 @@
         gap: 100px;
         height: auto;
         width: 100%;
-        padding: 100px 0px 700px 0px;
-        /* border: 0.5px solid #aaaaaa; */
-
-        scroll-snap-align: start;
+        padding: 0px 0px 500px 0px;
     }
 
     .project .left {
@@ -31,14 +28,23 @@
         width: clamp(200px, 50%, 400px);
         flex-grow: 0;
         flex-shrink: 0;
-        /* border: 0.5px solid #aaaaaa; */
+
+        scroll-snap-align: start;
+        padding: 50px 0px 0px 0px;
     }
 
     .project .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
         height: auto;
         width: clamp(200px, 50%, 400px);
         flex-grow: 0;
         flex-shrink: 0;
+
+        scroll-snap-align: start;
+        padding: 200px 0px 0px 0px;
     }
 
 

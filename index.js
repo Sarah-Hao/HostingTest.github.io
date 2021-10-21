@@ -243,8 +243,8 @@ const projects = [
                     top: 3808,
                     translateZ: 10
                 },
-                scenePlayer: {
-                    src: './src/img/serato/scenePlayer.png',
+                songview: {
+                    src: './src/img/serato/songview.png',
                     width: 8990,
                     height: 1536,
                     left: 531,

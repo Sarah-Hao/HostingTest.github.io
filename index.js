@@ -249,7 +249,7 @@ const projects = [
                     height: 1536,
                     left: 531,
                     top: 4235,
-                    translateZ: 10
+                    translateZ: 11
                 },
                 library: {
                     src: './src/img/serato/library.png',

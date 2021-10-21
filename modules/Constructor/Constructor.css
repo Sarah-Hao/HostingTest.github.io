@@ -1,0 +1,116 @@
+/* Author : Sarah-Hao */
+    .project {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        flex-wrap: wrap;
+        gap: 100px;
+        height: auto;
+        width: 100%;
+        padding: 100px 0px 700px 0px;
+        /* border: 0.5px solid #aaaaaa; */
+
+        scroll-snap-align: start;
+    }
+
+    .project .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        
+        gap: 10px;
+        height: auto;
+        width: clamp(200px, 50%, 400px);
+        flex-grow: 0;
+        flex-shrink: 0;
+        /* border: 0.5px solid #aaaaaa; */
+    }
+
+    .project .right {
+        height: auto;
+        width: clamp(200px, 50%, 400px);
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+
+    .project .left .title {
+        width: 100%;
+        font: var(--primary-light);
+        color: var(--primary1);
+    }
+
+    .project .left .subtitle {
+        width: 100%;
+        font: var(--secondary-light);
+        color: var(--primary2);
+    }
+
+    .project .left .state {
+        width: 100%;
+        color: var(--text-light);
+    }
+
+    .project .left .description {
+        line-height: 20px;
+    }
+
+    .project .tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        height: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .underline {
+        text-decoration: underline;
+        color: var(--primary2);
+        cursor: pointer;
+    }
+
+
+
+    /* =============== tag ================= */
+    .icon_medium {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        color: var(--text);
+    }
+
+    .icon_small{
+        cursor: pointer;
+        width: 13px;
+        height: 13px;
+        color: var(--text);
+    }
+
+    .tag {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        gap: 10px;
+        padding: 3px 15px 3px 5px;
+        border-radius: 0 50px 50px 0;
+    }

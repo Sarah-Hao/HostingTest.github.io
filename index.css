@@ -1,0 +1,301 @@
+/* Author : Sarah-Hao */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background: rgb(46, 46, 46);
+    --text: rgb(164, 164, 164);
+    --text-light: rgb(100, 100, 100);
+    --primary1: rgb(163, 163, 163);
+    --primary2: rgb(116, 116, 116);
+    --secondary1: rgb(132, 97, 182);
+    --secondary2: rgb(132, 97, 182);
+    --inactive: rgb(55, 55, 55);
+
+    --cplusplus: #1e66ec;
+    --qt: #2f4a36;
+    --scrum: #725134;
+    --figma: #b63737;
+    --react: #0078d4;
+    --github: #1d1d1d;
+    --html: #9e5731;
+    --css: #405169;
+    --js: #407855;
+
+    --primary-light: normal normal normal 35px "Raleway";
+    --secondary-light: normal normal normal 20px "Raleway";
+    --secondary-medium: normal normal 500 20px "Raleway";
+    --tertiary-light: normal normal normal 13px "Raleway";
+    --tertiary-medium: normal normal 500 13px "Raleway";
+    --tertiary-bold: normal normal bold 13px "Raleway";
+    --tiny-regular: normal normal normal 9px "Raleway";
+}
+
+body {
+    overflow: hidden;
+    position: fixed;
+    top: -10px;
+    left: -10px;
+}
+
+
+* {
+    box-sizing: border-box;
+    letter-spacing: 1.3px;
+}
+
+footer {
+    font: var(--tiny-regular);
+    opacity: 0.2;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    background-color: var(--background);
+    width: 100vw;
+    height: 100vh;
+    font: var(--tertiary-light);
+    color: var(--text);
+}
+
+.timeline_scrollable {
+    display: block;
+    overflow: hidden;
+    overflow-x: scroll;
+
+    height: 50px;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    width: 5000px;
+    height: 100%;
+    border-bottom: 0.2px solid var(--inactive);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* ================ sideBar====================== */
+
+.sidebar_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.sidebar_Btn {
+    width: 15px;
+    height: 100%;
+    border-left: 0.5px solid var(--inactive);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+.sidebar_scrollable {
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    width: 300px;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    scroll-snap-type: y mandatory;
+    transition: all 2s ease;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    width: 300px;
+    height: 1000px;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.sidebar div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    scroll-snap-align: start;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.sidebar div:nth-child(odd) {
+    border-top: 0.5px solid var(--inactive);
+}
+
+/* ================================================= */
+
+
+
+.icon_medium {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    color: var(--text);
+}
+
+.icon_small{
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    color: var(--text);
+}
+
+.pages_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.pages_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    height: 50px;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.pages_menu_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pages_menu_item::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: var(--text);
+    transition: all 0.5s ease;
+}
+
+.pages_menu_item:hover::after {
+    width: 100%;
+}
+
+.active {
+    font: var(--tertiary-bold);
+}
+
+.active::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: var(--text);
+    transition: all 0.5s ease;
+}
+
+.page_scrollable {
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    width: 100%;
+    height: calc(100vh - 100px);
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    scroll-snap-type: y mandatory;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+
+
+
+/* ============== Hide scrollbar for Chrome ================== */
+
+.timeline_scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar_scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+.page_scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .sidebar-scrollable {
+        width: 0px;
+    }
+}
+
+
+
+
+

@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Serato Studio Merger</title>
-    <script defer="true" src=""></script>
+    <title>Sarah Hao</title>
     <meta char="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="./modules/Model3DLayer/Model3DLayer.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./modules/Model3DLayer/Model3DLayer.css">
+    <script src="./modules/Constructor/Constructor.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./modules/Constructor/Constructor.css">
+    <link rel="stylesheet" href="./index.css">
+    <script defer='true' src="./index.js" type="text/javascript"></script>
 </head>
-
 <body>
-    <h1>Testing hosting page</h1>
+    <div class="layout">
+        <div class="timeline_scrollable">
+            <div class="timeline"></div>
+        </div>
+        <div class="main">
+            <div class="sidebar_container">
+                <div class="sidebar_scrollable">
+                    <div class="sidebar">
+                        <div id="photo">
+                            <img src="./src/img/sarah.png" alt="sarah hao" style="width:100%; height:auto; ">
+                        </div>
+                        <div id="name" style="font:var(--secondary-medium); width:100%;">
+                            <span>Sarah Xinqing Hao</span>
+                        </div>
+                        <div id="location">
+                            <span class="iconify icon_medium" data-icon="akar-icons:location"></span>
+                            <span>Auckland, New Zealand</span>
+                        </div>
+                        <div id="education">
+                            <img src="./src/img/uoa.png" alt="the univeristy of auckland" style="width: 100px; height: 100px;">
+                            <span>Computer science and Information system graduate 2021</span>
+                        </div>
+                        <div id="email">
+                            <span>Email:</span>
+                            <span>sarahhao911@gmail.com</span>
+                        </div>
+                        <div id="mobile">
+                            <span>Mobile:</span>
+                            <span>(+64) 0212686663</span>
+                        </div>
+                        <div class="social" id="linkedin">
+                            <span class="iconify icon_medium" data-icon="ant-design:linkedin-filled" onclick="redirect('https://www.linkedin.com/in/sarah-hao-b78a6a187/')"></span>
+                            <span style="cursor: pointer;" onclick="redirect('https://www.linkedin.com/in/sarah-hao-b78a6a187/')">Sarah Hao</span>
+                        </div>
+                        <div class="social" id="github">
+                            <span class="iconify icon_medium" data-icon="ant-design:github-fill" onclick="redirect('https://github.com/Sarah-Hao')"></span>
+                            <span style="cursor: pointer;" onclick="redirect('https://github.com/Sarah-Hao')">Sarah-Hao</span>
+                        </div>
+                        <div class="social" id="youtube">
+                            <span class="iconify icon_medium" data-icon="akar-icons:youtube-fill" onclick="redirect('https://www.youtube.com/channel/UCq7IXq3BTe1Ij7TDXDBKjbQ')"></span>
+                            <span style="cursor: pointer;" onclick="redirect('https://www.youtube.com/channel/UCq7IXq3BTe1Ij7TDXDBKjbQ')">SAR_H</span>
+                        </div>
+                        <div class="social" id="instagram">
+                            <span class="iconify icon_medium" data-icon="ant-design:instagram-filled" onclick="redirect('https://www.instagram.com/sar_h38/')"></span>
+                            <span style="cursor: pointer;" onclick="redirect('https://www.instagram.com/sar_h38/')">sar_h38</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar_Btn">
+                    <span class="iconify icon_small" data-icon="bi:three-dots-vertical"></span>
+                </div>
+            </div>
+            
 
-    <footer>by Sarah Hao</footer>
+            <div class="pages_container">
+                <div class="pages_menu">
+                    <div class="pages_menu_item" id="codeBtn">code</div>
+                    <div class="pages_menu_item" id="musicBtn">music</div>
+                    <div class="pages_menu_item" id="otherBtn">other</div>
+                </div>
+
+                <div class="page_scrollable">
+                    <div class="page" id="code"></div>
+                    <div class="page" id="music"></div>
+                    <div class="page" id="other"></div>
+                </div>
+            </div>
+        </div>
+        <footer>Written with vanilla JS CSS and HTML by Sarah Hao</footer>
+    </div>
+
 </body>
-
-
 </html>

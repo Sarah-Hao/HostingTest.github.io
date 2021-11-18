@@ -38,9 +38,9 @@ const projects = [
         id: 'golf',
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'Boost 360 Golf Academy',
-        subtitle: 'Product owner, frontend developer',
+        subtitle: 'UI designer, frontend developer',
         state: 'ongoing 08/2021 - 11/2021',
-        description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing efficiency and security maintenance and patching on website interface to maintain viability after launch.',
+        description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
         tags:
             [
                 { name: 'Figma', color: 'var(--figma)', icon: 'akar-icons:figma-fill' },

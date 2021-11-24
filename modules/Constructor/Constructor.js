@@ -60,7 +60,16 @@ function constructProject(data, i) {
     return project;
 }
 
+function spotifyFrame(src) {
+    const iframe = document.createElement('iframe');
+    iframe.src = src;
+    iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+    iframe.frameBorder = '0';
+    return iframe;
+}
 function constructSong(data, i) {
-    const song = createDiv('song', 'Coming');
+    const song = createDiv('song', null);
+    song.append(spotifyFrame(data.src));
+    song.append(createTags('tags', data.tags)); 
     return song;
-}}
+}

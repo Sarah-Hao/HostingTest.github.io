@@ -267,14 +267,45 @@ const projects = [
 const songs = [
     {
         constructor: constructSong, // import from 'Module/Constructor/Constructor.js'
-        id: 'DayDream',
-        title: 'DayDream',
-        src: './src/music/audio/DayDream.mp3',
+        id: 'OVER',
+        title: 'OVER',
+        src: "https://open.spotify.com/embed/track/4moFQ7GpTsBZddVLVJw9Gk?utm_source=generator",
         tags:
             [
-                { name: 'Serato studio', color: 'purple', icon: 'emojione-monotone:letter-s' },
-                { name: 'Voloco', color: 'black', icon: null },
-                { name: 'Samples', color: 'black', icon: 'oi:audio-spectrum' },
+                { name: 'Serato studio', bgcolor:'#5D5FEFAA', icon: 'emojione-monotone:letter-s' },
+                { name: 'Splice', bgcolor:'#2F80EDAA', icon: 'oi:audio-spectrum' },
+                { name: 'Iphone', bgcolor:'#EB5757AA', icon: 'bi:mic-fill' },
+                { name: 'AI mix', bgcolor:'#EF5DA8AA', icon: 'radix-icons:mixer-vertical'},
+            ],
+
+    },
+    {
+        constructor: constructSong, // import from 'Module/Constructor/Constructor.js'
+        id: 'MONEY',
+        title: 'MONEY',
+        src: "https://open.spotify.com/embed/track/2JkL8Av2IgbESlOKaw7bqU?utm_source=generator",
+        tags:
+            [
+                { name: 'Serato studio', bgcolor: '#5D5FEFAA', icon: 'emojione-monotone:letter-s' },
+                { name: 'Splice', bgcolor: '#2F80EDAA', icon: 'oi:audio-spectrum' },
+                { name: 'Iphone', bgcolor: '#EB5757AA', icon: 'bi:mic-fill' },
+                { name: 'Manual mix', bgcolor: '#F2C94CAA', icon: 'radix-icons:mixer-vertical'},
+                { name: 'AI mix', bgcolor: '#EF5DA8AA', icon: 'radix-icons:mixer-vertical'},
+            ],
+
+    },
+
+    {
+        constructor: constructSong, // import from 'Module/Constructor/Constructor.js'
+        id: 'IVE BEEN HIGH',
+        title: 'IVE BEEN HIGH',
+        src: "https://open.spotify.com/embed/track/3KxQcona5g78VFdkOnk4eb?utm_source=generator",
+        tags:
+            [
+                { name: 'Logic pro X', bgcolor: 'black', icon: 'clarity:cd-dvd-solid'},
+                { name: 'Splice', bgcolor: '#2F80EDAA', icon: 'oi:audio-spectrum' },
+                { name: 'Yeti mic', bgcolor: '#219653AA', icon: 'bi:mic-fill' },
+                { name: 'Manual mix', bgcolor: '#F2C94CAA', icon: 'radix-icons:mixer-vertical'},
             ],
 
     },

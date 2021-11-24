@@ -43,12 +43,12 @@ const projects = [
         description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
         tags:
             [
-                { name: 'Figma', color: 'var(--figma)', icon: 'akar-icons:figma-fill' },
-                { name: 'React', color: 'var(--react)', icon: 'akar-icons:react-fill' },
-                { name: 'JS', color: 'var(--js)', icon: 'akar-icons:javascript-fill' },
-                { name: 'CSS', color: 'var(--css)', icon: 'akar-icons:css-fill' },
-                { name: 'HTML', color: 'var(--html)', icon: 'akar-icons:html-fill' },
-                { name: 'Github', color: 'var(--github)', icon: 'akar-icons:github-fill' },
+                { name: 'Figma', bgcolor:'var(--figma)', icon: 'akar-icons:figma-fill' },
+                { name: 'React', bgcolor:'var(--react)', icon: 'akar-icons:react-fill' },
+                { name: 'JS', bgcolor:'var(--js)', icon: 'akar-icons:javascript-fill' },
+                { name: 'CSS', bgcolor:'var(--css)', icon: 'akar-icons:css-fill' },
+                { name: 'HTML', bgcolor:'var(--html)', icon: 'akar-icons:html-fill' },
+                { name: 'Github', bgcolor:'var(--github)', icon: 'akar-icons:github-fill' },
             ],
         model:
         {
@@ -134,10 +134,10 @@ const projects = [
         description: 'If you are a Serato Studio user and have tones of projects in hand. <a href="https://sarah-hao.github.io/SeratoStudioMerger/index.html" style="color: var(--text);">This site</a> might be fun to look at. It lets you replace deck sources and MIDI notes in batches, from one project to another. </br>Bear in mind, both projects have to come from the same local space.',
         tags:
             [
-                { name: 'vanilla JS', color: 'var(--js)', icon: 'akar-icons:javascript-fill' },
-                { name: 'CSS', color: 'var(--css)', icon: 'akar-icons:css-fill' },
-                { name: 'HTML', color: 'var(--html)', icon: 'akar-icons:html-fill' },
-                { name: 'Github', color: 'var(--github)', icon: 'akar-icons:github-fill' },
+                { name: 'vanilla JS', bgcolor:'var(--js)', icon: 'akar-icons:javascript-fill' },
+                { name: 'CSS', bgcolor:'var(--css)', icon: 'akar-icons:css-fill' },
+                { name: 'HTML', bgcolor:'var(--html)', icon: 'akar-icons:html-fill' },
+                { name: 'Github', bgcolor:'var(--github)', icon: 'akar-icons:github-fill' },
             ],
         model:
         {
@@ -175,9 +175,9 @@ const projects = [
         description: 'My role was mainly to help with the investigation, implementation and testing of the core product from within a small scrum team. Serato was kind enough to let me try out diffrent tasks and even involve me in the actual development process. </br> </br>During the 3 months internship, I had investigated issue and submited a solution, learnt to implement UI elements using Qt framework, participated in the sprint planning and review. At the end, one of the feature our team developed was released successfully.',
         tags:
             [
-                { name: 'C++', color: 'var(--cplusplus)', icon: 'bx:bxl-c-plus-plus' },
-                { name: 'Qt', color: 'var(--qt)', icon: 'file-icons:qt' },
-                { name: 'Jira', color: 'var(--jira)', icon: 'fa-brands:jira' },
+                { name: 'C++', bgcolor:'var(--cplusplus)', icon: 'bx:bxl-c-plus-plus' },
+                { name: 'Qt', bgcolor:'var(--qt)', icon: 'file-icons:qt' },
+                { name: 'Jira', bgcolor:'var(--jira)', icon: 'fa-brands:jira' },
             ],
         model:
         {

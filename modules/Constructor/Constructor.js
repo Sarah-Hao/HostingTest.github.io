@@ -16,7 +16,8 @@ function createTags(className, tags) {
         icon.setAttribute('data-icon', t.icon);
         tag.append(icon);
         tag.append(createDiv('name', t.name));
-        tag.style.backgroundColor = t.color;
+        tag.style.backgroundColor = t.bgcolor;
+        tag.style.color = t.color ? t.color : '#CCCCCC';
         container.append(tag);
     });
     return container;
@@ -62,4 +63,4 @@ function constructProject(data, i) {
 function constructSong(data, i) {
     const song = createDiv('song', 'Coming');
     return song;
-}
+}}

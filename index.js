@@ -336,7 +336,7 @@ const pages = [
 pages.forEach((page, i) => {
     if (page.data !== null && page.constructor !== null) {
         page.data.forEach((section, i) => {
-            page.dom.append(section.constructor(section));
+            page.dom.append(section.constructor(section, i));
         });
     }
 });

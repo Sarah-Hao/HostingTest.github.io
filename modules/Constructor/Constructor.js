@@ -60,16 +60,18 @@ function constructProject(data, i) {
     return project;
 }
 
-function spotifyFrame(src) {
+function spotifyFrame(src, i) {
     const iframe = document.createElement('iframe');
     iframe.src = src;
     iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
     iframe.frameBorder = '0';
+    iframe.style.animationDelay = '0.' + i*2 + 's';
     return iframe;
 }
 function constructSong(data, i) {
     const song = createDiv('song', null);
-    song.append(spotifyFrame(data.src));
+    song.append(spotifyFrame(data.src, i));
     song.append(createTags('tags', data.tags)); 
+    
     return song;
 }

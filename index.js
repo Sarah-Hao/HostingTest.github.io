@@ -38,8 +38,8 @@ const projects = [
         id: 'golf',
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'BP Golf Academy',
-        subtitle: 'Product owner, frontend developer',
-        state: 'ongoing 08/2021 - 11/2021',
+        subtitle: 'UI designer, frontend developer',
+        state: 'ended 08/2021 - 01/2022',
         description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
         tags:
             [
@@ -53,12 +53,12 @@ const projects = [
         model:
         {
             newWidth: (screenSmall) ? 180 : 400,
-            backgroundColor: '#2E414F',
+            backgroundColor: '#0c2e6e',
             observer: pageObserver,
             parent:
             {
-                src: './src/img/golf/Landing.png',
-                width: 1440,
+                src: './src/img/BPGolf/BPGolf1.png',
+                width: 1640,
                 height: 996,
                 left: 250,
                 top: 0,
@@ -67,60 +67,44 @@ const projects = [
             layers:
             {
                 Home: {
-                    src: './src/img/golf/Home.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf2.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 20
                 },
                 Blog: {
-                    src: './src/img/golf/Blog.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf3.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 40
                 },
                 Development: {
-                    src: './src/img/golf/Development.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf4.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 60
                 },
                 Video: {
-                    src: './src/img/golf/Video.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf5.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 80
                 },
                 Modules: {
-                    src: './src/img/golf/Modules.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf6.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 100
-                },
-                Profile: {
-                    src: './src/img/golf/Profile.png',
-                    width: 1440,
-                    height: 996,
-                    left: 0,
-                    top: 0,
-                    translateZ: 120
-                },
-                Student: {
-                    src: './src/img/golf/Student.png',
-                    width: 1440,
-                    height: 996,
-                    left: 0,
-                    top: 0,
-                    translateZ: 140
                 },
             },
         },
@@ -130,7 +114,7 @@ const projects = [
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'Serato Studio Merger',
         subtitle: 'Personal project',
-        state: 'ongoing 01/2021 - now',
+        state: 'paused 01/2021 - ',
         description: 'If you are a Serato Studio user and have tones of projects in hand. <a href="https://sarah-hao.github.io/SeratoStudioMerger/index.html" style="color: var(--text);">This site</a> might be fun to look at. It lets you replace deck sources and MIDI notes in batches, from one project to another. </br>Bear in mind, both projects have to come from the same local space.',
         tags:
             [
@@ -311,6 +295,18 @@ const songs = [
     },
 ];
 
+const others = [
+    {
+        id: 'summberLab',
+        constructor: constructOther, // import from 'Module/Constructor/Constructor.js'
+        title: 'Summber Lab',
+        subtitle: 'Overall winner team',
+        state: 'ongoing 01/2021 - now',
+        description: 'xxxxxxxxxxx</br>xxxx</br>xxxxxxxx',
+        grallery: [],
+    },
+];
+
 const pages = [
     {
         btn: document.querySelector('#codeBtn'),
@@ -325,7 +321,7 @@ const pages = [
     {
         btn: document.querySelector('#otherBtn'),
         dom: document.querySelector('#other'),
-        data: null,
+        data: others,
     },
 ];
 // -----------------------------------------------------------------
@@ -361,7 +357,7 @@ const setPage = (index) => {
     return;
 };
 pages.forEach((page, i) => page.btn.addEventListener('click', function () { setPage(i) }));
-setPage(0);
+setPage(2);
 
 // ---------------------------------------------------------------------------
 

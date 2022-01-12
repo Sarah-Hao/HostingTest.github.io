@@ -302,7 +302,7 @@ const others = [
         title: 'Summber Lab',
         subtitle: 'Overall winner team',
         state: 'ongoing 01/2021 - now',
-        description: 'xxxxxxxxxxx</br>xxxx</br>xxxxxxxx',
+        description: 'Summer Lab is designed by The University of Auckland to ignite the entrepreneur within students. Program includes rapid prototyping, workshops, access to entrepreneurs and industry leaders as guest speakers, as well as using tools and frameworks to shape innovative thinking.',
         grallery: [],
     },
 ];
@@ -357,7 +357,7 @@ const setPage = (index) => {
     return;
 };
 pages.forEach((page, i) => page.btn.addEventListener('click', function () { setPage(i) }));
-setPage(2);
+setPage(0);
 
 // ---------------------------------------------------------------------------
 
@@ -371,14 +371,20 @@ const closeSidebar = () => {
     sidebar_opened = false;
 }
 const openSidebar = () => {
-    sidebar.style.width = "300px";
+    sidebar.style.width = "270px";
     sidebar_opened = true;
 }
 
 sidebar_Btn.addEventListener("click", () => sidebar_opened ? closeSidebar() : openSidebar());
 
+// Close sidebar 5s after page load
+setTimeout(() => {
+    sidebar_opened = false;
+    closeSidebar();
+}, 5000);
+
 // Close sidebar on small screen, otherwise open
-(screenSmall === true) ? closeSidebar() : openSidebar();
+// (screenSmall === true) ? closeSidebar() : openSidebar();
 
 // used for elements inside sidebar
 function redirect(url) {

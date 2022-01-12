@@ -75,3 +75,24 @@ function constructSong(data, i) {
     
     return song;
 }
+
+
+function constructOther(data, i) {
+    // construct containers
+    const project = createDiv('project', null);
+    project.id = data.id;
+    const left = createDiv('left', null);
+    const right = createDiv('right', null);
+
+    // load title, subtitle, state, description, tags to the left
+    left.append(createDiv('title', data.title));
+    left.append(createDiv('subtitle', data.subtitle));
+    left.append(createDiv('state', data.state));
+    left.append(createDiv('description', data.description));
+
+    // right.append(createDiv('gallery', data.gallery[0]));
+
+    // load left right container to project
+    project.append(left, right);
+    return project;
+}

@@ -14,7 +14,7 @@
         padding: 0px 0px 500px 0px;
     }
 
-    .project .left {
+    .left {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -31,9 +31,10 @@
 
         scroll-snap-align: start;
         padding: 50px 0px 0px 0px;
+        /* border: 1px solid red; */
     }
 
-    .project .right {
+    .right {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -45,13 +46,14 @@
 
         scroll-snap-align: start;
         padding: 200px 0px 0px 0px;
+        /* border: 1px solid red; */
     }
 
 
     .project .left .title {
         width: 100%;
         font: var(--primary-light);
-        color: var(--primary1);
+        color: var(--secondary2);
     }
 
     .project .left .subtitle {
@@ -166,4 +168,10 @@
     @keyframes expand {
         0% {transform: translateX(-300px);}
         100% {opacity: 1; }
+    }
+
+    @media screen and (max-width: 600px) {
+        .project .left .title {
+            font-size: 40px;
+        }
     }

@@ -4,13 +4,14 @@
 
 :root {
     --background: rgb(0, 0, 0);
-    --text: rgb(164, 164, 164);
+    --text: rgb(148, 147, 147);
     --text-light: rgb(87, 87, 87);
     --primary1: rgb(163, 163, 163);
     --primary2: rgb(116, 116, 116);
-    --secondary1: rgb(132, 97, 182);
-    --secondary2: rgb(132, 97, 182);
-    --inactive: rgb(66, 66, 66);
+    --secondary1: rgb(92, 0, 121);
+    --secondary2: rgb(218, 213, 203);
+    --inactive: rgb(41, 41, 41);
+    --white: white;
 
     --cplusplus: #1e66ec;
     --qt: #1c8a39;
@@ -22,10 +23,10 @@
     --css: #20457a;
     --js: #407855;
 
-    --primary-light: normal normal normal 35px "Raleway";
+    --primary-light: normal normal 700 80px "Raleway";
     --secondary-light: normal normal normal 20px "Raleway";
     --secondary-medium: normal normal 500 20px "Raleway";
-    --tertiary-light: normal normal normal 13px "Raleway";
+    --tertiary-light: normal normal 400 14px "Raleway";
     --tertiary-medium: normal normal 500 13px "Raleway";
     --tertiary-bold: normal normal bold 13px "Raleway";
     --tiny-regular: normal normal normal 9px "Raleway";
@@ -62,7 +63,7 @@ footer {
     align-items: start;
 
     background-color: var(--background);
-    background-image: url(./src/img/background.png);
+    /* background-image: url(./src/img/background.png); */
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -101,6 +102,7 @@ footer {
     width: 100%;
     flex-grow: 1;
     flex-shrink: 1;
+    margin-top: 30px;
 }
 
 /* ================ sideBar====================== */
@@ -118,6 +120,7 @@ footer {
 .sidebar_Btn {
     width: 15px;
     height: 100%;
+    border-right: 0.5px solid var(--inactive);
     border-left: 0.5px solid var(--inactive);
     display: flex;
     justify-content: center;
@@ -132,7 +135,7 @@ footer {
     overflow: hidden;
     overflow-y: scroll;
 
-    width: 300px;
+    width: 270px;
     height: 100%;
     flex-grow: 0;
     flex-shrink: 0;
@@ -147,7 +150,7 @@ footer {
     justify-content: start;
     align-items: start;
 
-    width: 300px;
+    width: 270px;
     height: 1000px;
     gap: 10px;
     padding: 10px;
@@ -171,7 +174,7 @@ footer {
 
 
 .sidebar div:nth-child(odd) {
-    border-top: 0.5px solid var(--inactive);
+    border-bottom: 0.5px solid var(--inactive);
 }
 
 /* ================================================= */

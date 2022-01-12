@@ -38,27 +38,27 @@ const projects = [
         id: 'golf',
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'BP Golf Academy',
-        subtitle: 'Product owner, frontend developer',
-        state: 'ongoing 08/2021 - 11/2021',
+        subtitle: 'UI designer, frontend developer',
+        state: 'ended 08/2021 - 01/2022',
         description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
         tags:
             [
-                { name: 'Figma', color: 'var(--figma)', icon: 'akar-icons:figma-fill' },
-                { name: 'React', color: 'var(--react)', icon: 'akar-icons:react-fill' },
-                { name: 'JS', color: 'var(--js)', icon: 'akar-icons:javascript-fill' },
-                { name: 'CSS', color: 'var(--css)', icon: 'akar-icons:css-fill' },
-                { name: 'HTML', color: 'var(--html)', icon: 'akar-icons:html-fill' },
-                { name: 'Github', color: 'var(--github)', icon: 'akar-icons:github-fill' },
+                { name: 'Figma', bgcolor:'var(--figma)', icon: 'akar-icons:figma-fill' },
+                { name: 'React', bgcolor:'var(--react)', icon: 'akar-icons:react-fill' },
+                { name: 'JS', bgcolor:'var(--js)', icon: 'akar-icons:javascript-fill' },
+                { name: 'CSS', bgcolor:'var(--css)', icon: 'akar-icons:css-fill' },
+                { name: 'HTML', bgcolor:'var(--html)', icon: 'akar-icons:html-fill' },
+                { name: 'Github', bgcolor:'var(--github)', icon: 'akar-icons:github-fill' },
             ],
         model:
         {
             newWidth: (screenSmall) ? 180 : 400,
-            backgroundColor: '#2E414F',
+            backgroundColor: '#0c2e6e',
             observer: pageObserver,
             parent:
             {
-                src: './src/img/golf/Landing.png',
-                width: 1440,
+                src: './src/img/BPGolf/BPGolf1.png',
+                width: 1640,
                 height: 996,
                 left: 250,
                 top: 0,
@@ -67,60 +67,44 @@ const projects = [
             layers:
             {
                 Home: {
-                    src: './src/img/golf/Home.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf2.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 20
                 },
                 Blog: {
-                    src: './src/img/golf/Blog.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf3.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 40
                 },
                 Development: {
-                    src: './src/img/golf/Development.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf4.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 60
                 },
                 Video: {
-                    src: './src/img/golf/Video.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf5.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 80
                 },
                 Modules: {
-                    src: './src/img/golf/Modules.png',
-                    width: 1440,
+                    src: './src/img/BPGolf/BPGolf6.png',
+                    width: 1640,
                     height: 996,
                     left: 0,
                     top: 0,
                     translateZ: 100
-                },
-                Profile: {
-                    src: './src/img/golf/Profile.png',
-                    width: 1440,
-                    height: 996,
-                    left: 0,
-                    top: 0,
-                    translateZ: 120
-                },
-                Student: {
-                    src: './src/img/golf/Student.png',
-                    width: 1440,
-                    height: 996,
-                    left: 0,
-                    top: 0,
-                    translateZ: 140
                 },
             },
         },
@@ -130,14 +114,14 @@ const projects = [
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'Serato Studio Merger',
         subtitle: 'Personal project',
-        state: 'ongoing 01/2021 - now',
+        state: 'paused 01/2021 - ',
         description: 'If you are a Serato Studio user and have tones of projects in hand. <a href="https://sarah-hao.github.io/SeratoStudioMerger/index.html" style="color: var(--text);">This site</a> might be fun to look at. It lets you replace deck sources and MIDI notes in batches, from one project to another. </br>Bear in mind, both projects have to come from the same local space.',
         tags:
             [
-                { name: 'vanilla JS', color: 'var(--js)', icon: 'akar-icons:javascript-fill' },
-                { name: 'CSS', color: 'var(--css)', icon: 'akar-icons:css-fill' },
-                { name: 'HTML', color: 'var(--html)', icon: 'akar-icons:html-fill' },
-                { name: 'Github', color: 'var(--github)', icon: 'akar-icons:github-fill' },
+                { name: 'vanilla JS', bgcolor:'var(--js)', icon: 'akar-icons:javascript-fill' },
+                { name: 'CSS', bgcolor:'var(--css)', icon: 'akar-icons:css-fill' },
+                { name: 'HTML', bgcolor:'var(--html)', icon: 'akar-icons:html-fill' },
+                { name: 'Github', bgcolor:'var(--github)', icon: 'akar-icons:github-fill' },
             ],
         model:
         {
@@ -175,9 +159,9 @@ const projects = [
         description: 'My role was mainly to help with the investigation, implementation and testing of the core product from within a small scrum team. Serato was kind enough to let me try out diffrent tasks and even involve me in the actual development process. </br> </br>During the 3 months internship, I had investigated issue and submited a solution, learnt to implement UI elements using Qt framework, participated in the sprint planning and review. At the end, one of the feature our team developed was released successfully.',
         tags:
             [
-                { name: 'C++', color: 'var(--cplusplus)', icon: 'bx:bxl-c-plus-plus' },
-                { name: 'Qt', color: 'var(--qt)', icon: 'file-icons:qt' },
-                { name: 'Jira', color: 'var(--jira)', icon: 'fa-brands:jira' },
+                { name: 'C++', bgcolor:'var(--cplusplus)', icon: 'bx:bxl-c-plus-plus' },
+                { name: 'Qt', bgcolor:'var(--qt)', icon: 'file-icons:qt' },
+                { name: 'Jira', bgcolor:'var(--jira)', icon: 'fa-brands:jira' },
             ],
         model:
         {
@@ -267,16 +251,59 @@ const projects = [
 const songs = [
     {
         constructor: constructSong, // import from 'Module/Constructor/Constructor.js'
-        id: 'DayDream',
-        title: 'DayDream',
-        src: './src/music/audio/DayDream.mp3',
+        id: 'OVER',
+        title: 'OVER',
+        src: "https://open.spotify.com/embed/track/4moFQ7GpTsBZddVLVJw9Gk?utm_source=generator",
         tags:
             [
-                { name: 'Serato studio', color: 'purple', icon: 'emojione-monotone:letter-s' },
-                { name: 'Voloco', color: 'black', icon: null },
-                { name: 'Samples', color: 'black', icon: 'oi:audio-spectrum' },
+                { name: 'Serato studio', bgcolor:'#5D5FEFAA', icon: 'emojione-monotone:letter-s' },
+                { name: 'Splice', bgcolor:'#2F80EDAA', icon: 'oi:audio-spectrum' },
+                { name: 'Iphone', bgcolor:'#EB5757AA', icon: 'bi:mic-fill' },
+                { name: 'AI mix', bgcolor:'#EF5DA8AA', icon: 'radix-icons:mixer-vertical'},
             ],
 
+    },
+    {
+        constructor: constructSong, // import from 'Module/Constructor/Constructor.js'
+        id: 'MONEY',
+        title: 'MONEY',
+        src: "https://open.spotify.com/embed/track/2JkL8Av2IgbESlOKaw7bqU?utm_source=generator",
+        tags:
+            [
+                { name: 'Serato studio', bgcolor: '#5D5FEFAA', icon: 'emojione-monotone:letter-s' },
+                { name: 'Splice', bgcolor: '#2F80EDAA', icon: 'oi:audio-spectrum' },
+                { name: 'Iphone', bgcolor: '#EB5757AA', icon: 'bi:mic-fill' },
+                { name: 'Manual mix', bgcolor: '#F2C94CAA', icon: 'radix-icons:mixer-vertical'},
+                { name: 'AI mix', bgcolor: '#EF5DA8AA', icon: 'radix-icons:mixer-vertical'},
+            ],
+
+    },
+
+    {
+        constructor: constructSong, // import from 'Module/Constructor/Constructor.js'
+        id: 'IVE BEEN HIGH',
+        title: 'IVE BEEN HIGH',
+        src: "https://open.spotify.com/embed/track/3KxQcona5g78VFdkOnk4eb?utm_source=generator",
+        tags:
+            [
+                { name: 'Logic pro X', bgcolor: 'black', icon: 'clarity:cd-dvd-solid'},
+                { name: 'Splice', bgcolor: '#2F80EDAA', icon: 'oi:audio-spectrum' },
+                { name: 'Yeti mic', bgcolor: '#219653AA', icon: 'bi:mic-fill' },
+                { name: 'Manual mix', bgcolor: '#F2C94CAA', icon: 'radix-icons:mixer-vertical'},
+            ],
+
+    },
+];
+
+const others = [
+    {
+        id: 'summberLab',
+        constructor: constructOther, // import from 'Module/Constructor/Constructor.js'
+        title: 'Summber Lab',
+        subtitle: 'Overall winner team',
+        state: 'ongoing 01/2021 - now',
+        description: 'Summer Lab is designed by The University of Auckland to ignite the entrepreneur within students. Program includes rapid prototyping, workshops, access to entrepreneurs and industry leaders as guest speakers, as well as using tools and frameworks to shape innovative thinking.',
+        grallery: [],
     },
 ];
 
@@ -294,7 +321,7 @@ const pages = [
     {
         btn: document.querySelector('#otherBtn'),
         dom: document.querySelector('#other'),
-        data: null,
+        data: others,
     },
 ];
 // -----------------------------------------------------------------
@@ -305,7 +332,7 @@ const pages = [
 pages.forEach((page, i) => {
     if (page.data !== null && page.constructor !== null) {
         page.data.forEach((section, i) => {
-            page.dom.append(section.constructor(section));
+            page.dom.append(section.constructor(section, i));
         });
     }
 });
@@ -344,14 +371,20 @@ const closeSidebar = () => {
     sidebar_opened = false;
 }
 const openSidebar = () => {
-    sidebar.style.width = "300px";
+    sidebar.style.width = "270px";
     sidebar_opened = true;
 }
 
 sidebar_Btn.addEventListener("click", () => sidebar_opened ? closeSidebar() : openSidebar());
 
+// Close sidebar 5s after page load
+setTimeout(() => {
+    sidebar_opened = false;
+    closeSidebar();
+}, 5000);
+
 // Close sidebar on small screen, otherwise open
-(screenSmall === true) ? closeSidebar() : openSidebar();
+// (screenSmall === true) ? closeSidebar() : openSidebar();
 
 // used for elements inside sidebar
 function redirect(url) {

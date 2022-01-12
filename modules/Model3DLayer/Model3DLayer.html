@@ -93,7 +93,7 @@
             entries.forEach(entry => {
                 // add animation if it scroll into view
                 if (entry.isIntersecting) {
-                    Model3DLayer.startAnimation(entry.target);
+                    startAnimation(entry.target);
                     return;
                 }
                 // remove animation if not in viewport

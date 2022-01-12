@@ -16,7 +16,8 @@ function createTags(className, tags) {
         icon.setAttribute('data-icon', t.icon);
         tag.append(icon);
         tag.append(createDiv('name', t.name));
-        tag.style.backgroundColor = t.color;
+        tag.style.backgroundColor = t.bgcolor;
+        tag.style.color = t.color ? t.color : '#CCCCCC';
         container.append(tag);
     });
     return container;
@@ -59,7 +60,39 @@ function constructProject(data, i) {
     return project;
 }
 
+function spotifyFrame(src, i) {
+    const iframe = document.createElement('iframe');
+    iframe.src = src;
+    iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+    iframe.frameBorder = '0';
+    iframe.style.animationDelay = '0.' + i*2 + 's';
+    return iframe;
+}
 function constructSong(data, i) {
-    const song = createDiv('song', 'Coming');
+    const song = createDiv('song', null);
+    song.append(spotifyFrame(data.src, i));
+    song.append(createTags('tags', data.tags)); 
+    
     return song;
+}
+
+
+function constructOther(data, i) {
+    // construct containers
+    const project = createDiv('project', null);
+    project.id = data.id;
+    const left = createDiv('left', null);
+    const right = createDiv('right', null);
+
+    // load title, subtitle, state, description, tags to the left
+    left.append(createDiv('title', data.title));
+    left.append(createDiv('subtitle', data.subtitle));
+    left.append(createDiv('state', data.state));
+    left.append(createDiv('description', data.description));
+
+    // right.append(createDiv('gallery', data.gallery[0]));
+
+    // load left right container to project
+    project.append(left, right);
+    return project;
 }

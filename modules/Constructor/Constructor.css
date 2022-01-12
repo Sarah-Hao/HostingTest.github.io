@@ -14,7 +14,7 @@
         padding: 0px 0px 500px 0px;
     }
 
-    .project .left {
+    .left {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -31,9 +31,10 @@
 
         scroll-snap-align: start;
         padding: 50px 0px 0px 0px;
+        /* border: 1px solid red; */
     }
 
-    .project .right {
+    .right {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -45,13 +46,14 @@
 
         scroll-snap-align: start;
         padding: 200px 0px 0px 0px;
+        /* border: 1px solid red; */
     }
 
 
     .project .left .title {
         width: 100%;
         font: var(--primary-light);
-        color: var(--primary1);
+        color: var(--secondary2);
     }
 
     .project .left .subtitle {
@@ -69,7 +71,7 @@
         line-height: 20px;
     }
 
-    .project .tags {
+    .tags {
         display: flex;
         flex-direction: row;
         justify-content: start;
@@ -119,4 +121,57 @@
         gap: 10px;
         padding: 3px 15px 3px 5px;
         border-radius: 0 50px 50px 0;
+
+        animation: expand 1.5s ease;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+
+
+    .song {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+        width: clamp(200px, 100%, 1000px);
+        padding: 10px;
+        margin: 10px 0 20px 0;
+        border-radius: 10px;
+
+        /* background: linear-gradient(123.23deg, rgba(47, 128, 237, 1) -1.05%, rgba(210, 137, 255, 1) 101.37%);
+        background-blend-mode: lighten; */
+        
+    }
+
+    .song iframe {
+        height: 80px;
+        width: 100%;
+        border-radius: 10px;
+        animation: top-flip 1s ease;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    @keyframes top-flip {
+        0% {transform: rotateX(90deg); transform-origin: top;}
+        100% {opacity: 1; }
+        
+    }
+
+
+    @keyframes expand {
+        0% {transform: translateX(-300px);}
+        100% {opacity: 1; }
+    }
+
+    @media screen and (max-width: 600px) {
+        .project .left .title {
+            font-size: 40px;
+        }
     }

@@ -386,7 +386,7 @@ setTimeout(() => {
     setTimeout(()=> {
         myImage.src = './src/img/sarah2.png';
         myImage.classList = ['slide_in'];
-    }, 1000);
+    }, 2000);
 }, 4000);
 
 // Close sidebar 10s after page load

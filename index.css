@@ -4,7 +4,7 @@
 
 :root {
     --background: rgb(0, 0, 0);
-    --text: rgb(148, 147, 147);
+    --text: rgb(185, 185, 185);
     --text-light: rgb(87, 87, 87);
     --primary1: rgb(163, 163, 163);
     --primary2: rgb(116, 116, 116);
@@ -23,7 +23,7 @@
     --css: #20457a;
     --js: #407855;
 
-    --primary-light: normal normal 700 80px "Raleway";
+    --primary-light: normal normal 700 70px "Raleway";
     --secondary-light: normal normal normal 20px "Raleway";
     --secondary-medium: normal normal 500 20px "Raleway";
     --tertiary-light: normal normal 400 14px "Raleway";

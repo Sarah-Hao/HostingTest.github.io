@@ -68,8 +68,15 @@
     }
 
     .project .left .description {
-        line-height: 20px;
+        font: var(--tertiary-light);
+        line-height: 25px;
     }
+
+    .project .left .description em {
+        filter: brightness(1.5);
+        font: var(--tertiary-bold);
+    }
+
 
     .tags {
         display: flex;

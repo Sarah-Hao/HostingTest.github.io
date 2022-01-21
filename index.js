@@ -40,7 +40,8 @@ const projects = [
         title: 'BP Golf Academy',
         subtitle: 'UI designer, frontend developer',
         state: 'ended 08/2021 - 01/2022',
-        description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
+        description: "<a href='https://www.bpgolfacademy.com/' style='color: var(--text);'>BP Golf Academy</a> is an ambitious golf teaching institution based in New Zealand. In early 2021, the owner foresaw the opportunity in online education and decided to give me the honor to initiate the project. </br>I pulled up a team of four and delivered a <em>responsive multi-language website</em> with a <em>student portal </em>, plus a very simple-to-use <em>teacher panel </em>. My role is mainly front-end, but because we don't have a UI designer, I also meddle with that part of the job.",
+        // description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
         tags:
             [
                 { name: 'Figma', bgcolor:'var(--figma)', icon: 'akar-icons:figma-fill' },

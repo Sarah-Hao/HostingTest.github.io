@@ -38,9 +38,10 @@ const projects = [
         id: 'golf',
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'BP Golf Academy',
-        subtitle: 'UI designer, frontend developer',
+        subtitle: 'Frontend developer',
         state: 'ended 08/2021 - 01/2022',
-        description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
+        description: "<a href='https://www.bpgolfacademy.com/' style='color: var(--text);'>BP Golf Academy</a> is an ambitious golf teaching institution based in New Zealand. In early 2021, the owner foresaw the opportunity in online education and decided to give me the honor to initiate the project. </br>I pulled up a team of four and delivered a <em>responsive multi-language website</em> with a <em>student portal </em>, plus a very simple-to-use <em>teacher panel </em>. My role is mainly front-end, but because we don't have a UI designer, I also meddle with that part of the job.",
+        // description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
         tags:
             [
                 { name: 'Figma', bgcolor:'var(--figma)', icon: 'akar-icons:figma-fill' },
@@ -154,7 +155,7 @@ const projects = [
         id: 'serato',
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'Serato',
-        subtitle: 'Junior software engineer intern',
+        subtitle: 'Junior software engineer',
         state: 'ended 11/2019 - 2/2020',
         description: 'My role was mainly to help with the investigation, implementation and testing of the core product from within a small scrum team. Serato was kind enough to let me try out diffrent tasks and even involve me in the actual development process. </br> </br>During the 3 months internship, I had investigated issue and submited a solution, learnt to implement UI elements using Qt framework, participated in the sprint planning and review. At the end, one of the feature our team developed was released successfully.',
         tags:
@@ -365,6 +366,8 @@ setPage(0);
 // --------------- Sidebar -----------------------------------------
 const sidebar = document.querySelector('.sidebar_scrollable');
 const sidebar_Btn = document.querySelector('.sidebar_Btn');
+const myImage = document.querySelector('#me');
+
 let sidebar_opened = false;
 const closeSidebar = () => {
     sidebar.style.width = "0px";
@@ -377,11 +380,20 @@ const openSidebar = () => {
 
 sidebar_Btn.addEventListener("click", () => sidebar_opened ? closeSidebar() : openSidebar());
 
-// Close sidebar 5s after page load
+// Slide and change my image 4s after page load
+setTimeout(() => {
+    myImage.classList = ['slide_out'];
+    setTimeout(()=> {
+        myImage.src = './src/img/sarah2.png';
+        myImage.classList = ['slide_in'];
+    }, 1000);
+}, 4000);
+
+// Close sidebar 10s after page load
 setTimeout(() => {
     sidebar_opened = false;
     closeSidebar();
-}, 5000);
+}, 10000);
 
 // Close sidebar on small screen, otherwise open
 // (screenSmall === true) ? closeSidebar() : openSidebar();

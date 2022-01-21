@@ -1,16 +1,16 @@
 /* Author : Sarah-Hao */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto Condensed:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
 :root {
     --background: rgb(0, 0, 0);
-    --text: rgb(148, 147, 147);
-    --text-light: rgb(87, 87, 87);
+    --text: rgb(182, 182, 182);
+    --text-light: rgb(177, 182, 241);
     --primary1: rgb(163, 163, 163);
-    --primary2: rgb(116, 116, 116);
+    --primary2: rgb(163, 163, 163);
     --secondary1: rgb(92, 0, 121);
-    --secondary2: rgb(218, 213, 203);
-    --inactive: rgb(41, 41, 41);
+    --secondary2: rgb(255, 255, 255);
+    --inactive: rgb(107, 116, 241);
     --white: white;
 
     --cplusplus: #1e66ec;
@@ -23,13 +23,15 @@
     --css: #20457a;
     --js: #407855;
 
-    --primary-light: normal normal 700 80px "Raleway";
-    --secondary-light: normal normal normal 20px "Raleway";
-    --secondary-medium: normal normal 500 20px "Raleway";
-    --tertiary-light: normal normal 400 14px "Raleway";
-    --tertiary-medium: normal normal 500 13px "Raleway";
-    --tertiary-bold: normal normal bold 13px "Raleway";
-    --tiny-regular: normal normal normal 9px "Raleway";
+    --primary-light: normal normal normal 70px "Anton";
+    --primary-bold: normal normal 700 70px "Anton";
+    --secondary-light: normal normal normal 20px "Anton";
+    --secondary-medium: normal normal 500 20px "Anton";
+    --secondary-bold: normal normal 700 40px "Anton";
+    --tertiary-light: normal normal 400 14px "Roboto Condensed";
+    --tertiary-medium: normal normal 500 13px "Roboto Condensed";
+    --tertiary-bold: normal normal bold 13px "Roboto Condensed";
+    --tiny-regular: normal normal normal 9px "Roboto Condensed";
 }
 
 body {
@@ -63,7 +65,7 @@ footer {
     align-items: start;
 
     background-color: var(--background);
-    /* background-image: url(./src/img/background.png); */
+    background-image: url(./src/img/background.jpg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -90,7 +92,7 @@ footer {
 
     width: 5000px;
     height: 100%;
-    border-bottom: 0.2px solid var(--inactive);
+    border-bottom: 2px solid var(--inactive);
 }
 
 .main {
@@ -102,7 +104,6 @@ footer {
     width: 100%;
     flex-grow: 1;
     flex-shrink: 1;
-    margin-top: 30px;
 }
 
 /* ================ sideBar====================== */
@@ -120,8 +121,7 @@ footer {
 .sidebar_Btn {
     width: 15px;
     height: 100%;
-    border-right: 0.5px solid var(--inactive);
-    border-left: 0.5px solid var(--inactive);
+    border-left: 2px solid var(--inactive);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,6 +142,9 @@ footer {
 
     scroll-snap-type: y mandatory;
     transition: all 1s ease;
+    background: rgba(0,0,0,0.7);
+    color: var(--text-light);
+    padding-bottom: 200px;
 }
 
 .sidebar {
@@ -168,7 +171,7 @@ footer {
     flex-shrink: 0;
 
     scroll-snap-align: start;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     gap: 10px;
 }
 
@@ -176,6 +179,22 @@ footer {
 .sidebar div:nth-child(odd) {
     border-bottom: 0.5px solid var(--inactive);
 }
+
+.sidebar div:nth-child(1) {
+    padding-top: 30px;
+}
+
+.slide_out {
+    position: relative;
+    animation: slide_out 0.5s;
+    animation-fill-mode: forwards;
+}
+.slide_in {
+    position: relative;
+    animation: slide_in 0.5s;
+    animation-fill-mode: forwards;
+}
+
 
 /* ================================================= */
 
@@ -261,7 +280,7 @@ footer {
     overflow-y: scroll;
 
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 10px);
     flex-grow: 1;
     flex-shrink: 1;
 
@@ -300,7 +319,14 @@ footer {
     }
 }
 
-
+@keyframes slide_out {
+    0% {left: 0;}
+    100% {left: -300px;}
+}
+@keyframes slide_in {
+    0% {left: -300px;}
+    100% {left: 0px;}
+}
 
 
 

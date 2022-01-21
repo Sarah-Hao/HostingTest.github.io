@@ -89,8 +89,25 @@ function constructOther(data, i) {
     left.append(createDiv('subtitle', data.subtitle));
     left.append(createDiv('state', data.state));
     left.append(createDiv('description', data.description));
+    left.append(createTags('tags', data.tags));
 
-    // right.append(createDiv('gallery', data.gallery[0]));
+    // load model to the right if specified 
+    if (data.model) {
+        const model = new Model3DLayer(
+            data.model.parent,
+            data.model.layers,
+            data.model.newWidth,
+            layerTranslateZBase = 0,
+            animationDelayBase = 0.2,
+            id = data.id + '_model',
+            backgroundColor = data.model.backgroundColor
+        );
+        right.append(model.getModelDOM());
+
+        // observe model if observer is specified,
+        // this is usually used to activate animation when scroll into view
+        (data.model.observer !== null) ? data.model.observer.observe(model.getModelDOM()) : Model3DLayer.startAnimation(model.getModelDOM());
+    }
 
     // load left right container to project
     project.append(left, right);

@@ -40,7 +40,7 @@ const projects = [
         title: 'BP Golf Academy',
         subtitle: 'Frontend developer',
         state: 'ended 08/2021 - 01/2022',
-        description: "<a href='https://www.bpgolfacademy.com/' style='color: var(--text);'>BP Golf Academy</a> is an ambitious golf teaching institution based in New Zealand. In early 2021, the owner foresaw the opportunity in online education and decided to give me the honor to initiate the project. </br>I pulled up a team of four and delivered a <em>responsive multi-language website</em> with a <em>student portal </em>, plus a very simple-to-use <em>teacher panel </em>. My role is mainly front-end, but because we don't have a UI designer, I also meddle with that part of the job.",
+        description: "BP Golf Academy is an ambitious golf teaching institution based in New Zealand. In early 2021, the owner foresaw the opportunity in online education and decided to give me the honor to initiate the project.</br> </br>We pulled up a team of four and delivered a <em><a href='https://www.bpgolfacademy.com/' style='color: var(--text);'>responsive multi-language website</a></em> with <em>student portal </em>, plus a very simple-to-use <em>teacher panel </em>. My role is mainly front-end, but because we don't have a UI designer, I also meddle with that part of the job.",
         // description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
         tags:
             [
@@ -116,7 +116,7 @@ const projects = [
         title: 'Serato Studio Merger',
         subtitle: 'Personal project',
         state: 'paused 01/2021 - ',
-        description: 'If you are a Serato Studio user and have tones of projects in hand. <a href="https://sarah-hao.github.io/SeratoStudioMerger/index.html" style="color: var(--text);">This site</a> might be fun to look at. It lets you replace deck sources and MIDI notes in batches, from one project to another. </br>Bear in mind, both projects have to come from the same local space.',
+        description: "After finishing my internship at Serato, I continued to use their product for my music production. Then it was in late 2019, I had this idea of a <em><a href='https://sarah-hao.github.io/SeratoStudioMerger/index.html' style='color: var(--text);'>web merger to help musicians quickly improvise</a></em>.</br></br>Suppose you are a Serato Studio user and have tones of projects in hand. This site iteratively searches through .ssp files and, lets you replace deck sources (or MIDI notes) in batches from one project to another.</br></br>Due to the limitation of vanilla JS and bad practice, I decide to pause the project and, rewrite them with React sometimes in the future.",
         tags:
             [
                 { name: 'vanilla JS', bgcolor:'var(--js)', icon: 'akar-icons:javascript-fill' },
@@ -157,7 +157,7 @@ const projects = [
         title: 'Serato',
         subtitle: 'Junior software engineer',
         state: 'ended 11/2019 - 2/2020',
-        description: 'My role was mainly to help with the investigation, implementation and testing of the core product from within a small scrum team. Serato was kind enough to let me try out diffrent tasks and even involve me in the actual development process. </br> </br>During the 3 months internship, I had investigated issue and submited a solution, learnt to implement UI elements using Qt framework, participated in the sprint planning and review. At the end, one of the feature our team developed was released successfully.',
+        description: "<em><a href='https://serato.com/' style='color: var(--text);'>Serato</a></em> is one of the leading DJ software companies. Before I started my third year in university, I had the luck to attend a three-month internship.</br> </br>Even though C++ wasn't taught in my class, my team took me with great patience. It was where I first glanced at actual IT production: CI/CD, blacklogs, scrum board, sprint meeting... where I grew, learned, and applied as I went.",
         tags:
             [
                 { name: 'C++', bgcolor:'var(--cplusplus)', icon: 'bx:bxl-c-plus-plus' },
@@ -303,8 +303,24 @@ const others = [
         title: 'Summber Lab',
         subtitle: 'Overall winner team',
         state: 'ongoing 01/2021 - now',
-        description: 'Summer Lab is designed by The University of Auckland to ignite the entrepreneur within students. Program includes rapid prototyping, workshops, access to entrepreneurs and industry leaders as guest speakers, as well as using tools and frameworks to shape innovative thinking.',
-        grallery: [],
+        description: "The University of Auckland designs Summer Lab to ignite the entrepreneur within students. </br></br>Our team went through rapid prototyping, market analysis, financial projection and a pitch to fellow entrepreneurs and investors. We won the overall prize with a proposed<a href='http://craccum.co.nz/news/reporting/sustainable-hygiene-start-up-scores-first-place-in-summer-lab-programme/' style='color: var(--text);'> <em>sustainable cosmetic packaging startup</em></a>.",
+        tags:[],
+        model:
+            {
+                newWidth: (screenSmall) ? 200 : 500,
+                backgroundColor: '#000000',
+                observer: pageObserver,
+                parent:
+                {
+                    src: './src/img/SummberLab/SummerLab.png',
+                    width: 1280,
+                    height: '720',
+                    left: -50,
+                    top: 0,
+                    transform: 'rotateX(0deg) rotateY(0deg)',
+                },
+                layers : {},
+            },
     },
 ];
 

@@ -50,21 +50,21 @@
     }
 
 
-    .project .left .title {
+    .project .left .subtitle {
         width: 100%;
-        font: var(--primary-light);
+        font: var(--primary-bold);
         color: var(--secondary2);
     }
 
-    .project .left .subtitle {
+    .project .left .title {
         width: 100%;
         font: var(--secondary-light);
-        color: var(--primary2);
+        color: var(--text-light);
     }
 
     .project .left .state {
         width: 100%;
-        color: var(--text-light);
+        color: var(--primary2);
     }
 
     .project .left .description {
@@ -73,7 +73,7 @@
     }
 
     .project .left .description em {
-        filter: brightness(1.5);
+        filter: brightness(1.2);
         font: var(--tertiary-bold);
     }
 

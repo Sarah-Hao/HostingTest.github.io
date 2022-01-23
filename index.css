@@ -65,7 +65,7 @@ footer {
     align-items: start;
 
     background-color: var(--background);
-    background-image: url(./src/img/background.jpg);
+    background-image: url(./src/img/background.svg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -297,6 +297,32 @@ footer {
     padding: 10px 10px 10px 10px;
 }
 
+
+/* ============== Loading animation ================== */
+.loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.loading lottie-player {
+    width: 400px;
+    height: auto;
+}
+
+.loading p {
+    font: var(--secondary-light);
+    padding: 0 50px 0 50px;
+    position: relative;
+    top: 80px;
+    color: rgb(65, 65, 65);
+}
 
 /* ============== Hide scrollbar for Chrome ================== */
 

@@ -12,7 +12,8 @@
 //     - load music page data
 //     - build other player class
 //     - load other page data
-
+const layout = document.querySelector('.layout');
+layout.style.display = 'none';
 // -------- Observer for activating animation ---------------------------------
 let screenSmall = window.matchMedia('(max-width: 769px)').matches;
 const observerOption = {
@@ -38,10 +39,9 @@ const projects = [
         id: 'golf',
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'BP Golf Academy',
-        subtitle: 'Frontend developer',
+        subtitle: 'UI & Frontend developer',
         state: 'ended 08/2021 - 01/2022',
-        description: "BP Golf Academy is an ambitious golf teaching institution based in New Zealand. In early 2021, the owner foresaw the opportunity in online education and decided to give me the honor to initiate the project.</br> </br>We pulled up a team of four and delivered a <em><a href='https://www.bpgolfacademy.com/' style='color: var(--text);'>responsive multi-language website</a></em> with <em>student portal </em>, plus a very simple-to-use <em>teacher panel </em>. My role is mainly front-end, but because we don't have a UI designer, I also meddle with that part of the job.",
-        // description: 'My role is mostly responsible for translating customer requirements into technical site concepts for bidding and initial planning purposes.</br>I also contribute to the front-end development. Provide ongoing maintenance and patching on website interface to maintain viability after launch.',
+        description: "BP Golf Academy is an ambitious golf teaching institution based in New Zealand. In early 2021, the owner foresaw the opportunity in online education and honored me to initiate his project.</br> </br>I mocked up the UI in Figma, and we ironed out the details in about a month. Then, I worked with 3 other developers and delivered a <em><a href='https://www.bpgolfacademy.com/' style='color: var(--text);'>responsive multi-language website</a></em> with <em>student portal </em>, plus a simple-to-use <em>teacher panel </em>. </br></br> Some content is still waiting to be filled on the website, but my role is mostly done.",
         tags:
             [
                 { name: 'Figma', bgcolor:'var(--figma)', icon: 'akar-icons:figma-fill' },
@@ -157,7 +157,7 @@ const projects = [
         title: 'Serato',
         subtitle: 'Junior software engineer',
         state: 'ended 11/2019 - 2/2020',
-        description: "<em><a href='https://serato.com/' style='color: var(--text);'>Serato</a></em> is one of the leading DJ software companies. Before I started my third year in university, I had the luck to attend a three-month internship.</br> </br>Even though C++ wasn't taught in my class, my team took me with great patience. It was where I first glanced at actual IT production: CI/CD, blacklogs, scrum board, sprint meeting... where I grew, learned, and applied as I went.",
+        description: "<em><a href='https://serato.com/' style='color: var(--text);'>Serato</a></em> is one of the leading DJ software companies. Before I started my third year in university, I had the luck to attend a three-month internship with them.</br> </br>My role is mainly to help with the investigation, implementation and testing of the core product from within a scrum team. I didn't know anything before I came in, my team took me with great patience. It was where I first glanced at actual IT production: CI/CD, blacklogs, scrum board, sprint meeting... where I grew, learned, and applied as I went.",
         tags:
             [
                 { name: 'C++', bgcolor:'var(--cplusplus)', icon: 'bx:bxl-c-plus-plus' },
@@ -302,8 +302,8 @@ const others = [
         constructor: constructOther, // import from 'Module/Constructor/Constructor.js'
         title: 'Summber Lab',
         subtitle: 'Overall winner team',
-        state: 'ongoing 01/2021 - now',
-        description: "The University of Auckland designs Summer Lab to ignite the entrepreneur within students. </br></br>Our team went through rapid prototyping, market analysis, financial projection and a pitch to fellow entrepreneurs and investors. We won the overall prize with a proposed<a href='http://craccum.co.nz/news/reporting/sustainable-hygiene-start-up-scores-first-place-in-summer-lab-programme/' style='color: var(--text);'> <em>sustainable cosmetic packaging startup</em></a>.",
+        state: 'ended 01/2021 - 02/2021',
+        description: "The University of Auckland designs Summer Lab to ignite the entrepreneur within students. </br></br>Our team went through <em>user research, rapid prototyping</em>, market analysis, financial projection and a final pitch to investors. At the end, we won the overall prize with a proposed<a href='http://craccum.co.nz/news/reporting/sustainable-hygiene-start-up-scores-first-place-in-summer-lab-programme/' style='color: var(--text);'> <em>sustainable cosmetic packaging startup</em></a>.",
         tags:[],
         model:
             {
@@ -384,7 +384,7 @@ const sidebar = document.querySelector('.sidebar_scrollable');
 const sidebar_Btn = document.querySelector('.sidebar_Btn');
 const myImage = document.querySelector('#me');
 
-let sidebar_opened = false;
+let sidebar_opened = true;
 const closeSidebar = () => {
     sidebar.style.width = "0px";
     sidebar_opened = false;
@@ -393,23 +393,8 @@ const openSidebar = () => {
     sidebar.style.width = "270px";
     sidebar_opened = true;
 }
-
+closeSidebar();
 sidebar_Btn.addEventListener("click", () => sidebar_opened ? closeSidebar() : openSidebar());
-
-// Slide and change my image 4s after page load
-setTimeout(() => {
-    myImage.classList = ['slide_out'];
-    setTimeout(()=> {
-        myImage.src = './src/img/sarah2.png';
-        myImage.classList = ['slide_in'];
-    }, 2000);
-}, 4000);
-
-// Close sidebar 10s after page load
-setTimeout(() => {
-    sidebar_opened = false;
-    closeSidebar();
-}, 10000);
 
 // Close sidebar on small screen, otherwise open
 // (screenSmall === true) ? closeSidebar() : openSidebar();
@@ -422,8 +407,32 @@ function redirect(url) {
 
 
 
-// ------------------- Load Timeline------------------------------
+// ------------------- Load Timeline ------------------------------
 const timeline_container = document.querySelector('.timeline_scrollable');
 const timeline = document.querySelector('.timeline');
-    // --------------------------------------------------------------
+// --------------------------------------------------------------
 
+
+
+
+// ------------------- Load Animation ------------------------------
+const loading = document.querySelector('.loading');
+
+setTimeout(() => {
+    loading.remove();
+    layout.style.display = 'flex';
+}, 5000);
+
+// Close sidebar 10s after page load
+setTimeout(() => {
+    openSidebar();
+}, 8000);
+
+// Slide and change my image 4s after page load
+// setTimeout(() => {
+//     myImage.classList = ['slide_out'];
+//     setTimeout(()=> {
+//         myImage.src = './src/img/sarah2.png';
+//         myImage.classList = ['slide_in'];
+//     }, 2000);
+// }, 4000);

@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto Condensed:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
 :root {
     --background: rgb(0, 0, 0);
+    --background2: rgb(21, 29, 57);
     --text: rgb(182, 182, 182);
     --text-light: rgb(177, 182, 241);
     --primary1: rgb(163, 163, 163);
@@ -12,6 +13,7 @@
     --secondary2: rgb(255, 255, 255);
     --inactive: rgb(107, 116, 241);
     --white: white;
+    
 
     --cplusplus: #1e66ec;
     --qt: #1c8a39;
@@ -307,21 +309,25 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(255, 255, 255);
+    background: var(--background);
+    /* background: rgb(40,19,55); */
+    /* background: linear-gradient(90deg, rgba(40,19,55,1) 0%, rgba(31,22,69,1) 50%, rgba(21,29,57,1) 100%); */
     z-index: 1000;
 }
 
 .loading lottie-player {
-    width: 400px;
+    width: 50px;
     height: auto;
+    position: relative;
+    top: 0px;
 }
 
 .loading p {
-    font: var(--secondary-light);
+    font: var(--tertiary-light);
     padding: 0 50px 0 50px;
     position: relative;
-    top: 80px;
-    color: rgb(65, 65, 65);
+    top: 0px;
+    color: rgb(98, 153, 255);
 }
 
 /* ============== Hide scrollbar for Chrome ================== */

@@ -184,4 +184,12 @@
         .project .left .subtitle {
             font-size: 50px;
         }
+
+        .project .left {
+            scroll-snap-align: none;
+        }
+
+        .project .right {
+            scroll-snap-align: none;
+        }
     }

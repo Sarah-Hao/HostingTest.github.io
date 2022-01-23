@@ -393,7 +393,7 @@ const openSidebar = () => {
     sidebar.style.width = "270px";
     sidebar_opened = true;
 }
-closeSidebar();
+
 sidebar_Btn.addEventListener("click", () => sidebar_opened ? closeSidebar() : openSidebar());
 
 // Close sidebar on small screen, otherwise open
@@ -423,7 +423,7 @@ window.onload = () => {
     layout.style.display = 'flex';
     // Close sidebar 10s after page load
     setTimeout(() => {
-        openSidebar();
+        closeSidebar();
     }, 2000);
 };
 

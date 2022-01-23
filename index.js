@@ -41,7 +41,7 @@ const projects = [
         title: 'BP Golf Academy',
         subtitle: 'UI & Frontend developer',
         state: 'ended 08/2021 - 01/2022',
-        description: "BP Golf Academy is an ambitious golf teaching institution based in New Zealand. In early 2021, the owner foresaw the opportunity in online education and honored me to initiate his project.</br> </br>I mocked up the UI in Figma, and we ironed out the details in about a month. Then, I worked with 3 other developers and delivered a <em><a href='https://www.bpgolfacademy.com/' style='color: var(--text);'>responsive multi-language website</a></em> with <em>student portal </em>, plus a simple-to-use <em>teacher panel </em>. </br></br> Some content is still waiting to be filled on the website, but my role is mostly done.",
+        description: "BP Golf Academy is an ambitious golf teaching institution based in New Zealand. In early 2021, the owner foresaw the opportunity in online education and honored me to initiate his project.</br> </br>I mocked up the UI in Figma, and we ironed out the details in about a month. Then, I worked with 3 other developers and delivered a <em><a href='/src/documents/RhysLetter.pdf' style='color: var(--text);'>responsive multi-language website</a></em> with <em>student portal </em>, plus a simple-to-use <em>teacher panel </em>. </br></br> <a href='/src/documents/RhysLetter.pdf' style='color: var(--text);'>Client reference letter</a>",
         tags:
             [
                 { name: 'Figma', bgcolor:'var(--figma)', icon: 'akar-icons:figma-fill' },
@@ -418,15 +418,19 @@ const timeline = document.querySelector('.timeline');
 // ------------------- Load Animation ------------------------------
 const loading = document.querySelector('.loading');
 
-setTimeout(() => {
+window.onload = () => {
     loading.remove();
     layout.style.display = 'flex';
-}, 5000);
+    // Close sidebar 10s after page load
+    setTimeout(() => {
+        openSidebar();
+    }, 2000);
+};
 
-// Close sidebar 10s after page load
-setTimeout(() => {
-    openSidebar();
-}, 8000);
+
+
+
+
 
 // Slide and change my image 4s after page load
 // setTimeout(() => {

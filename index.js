@@ -36,6 +36,73 @@ const pageObserver = new IntersectionObserver(
 // ------------------------ Data ----------------------------------
 const projects = [
     {
+        id: 'aucssMembership',
+        constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
+        title: 'AUCSS',
+        subtitle: 'Designer & Frontend Developer',
+        state: 'ongoing 02/2022',
+        description: "As a member of the Auckland University Chinese Student Society (AUCSS), I volunteered to design and develop the upcoming membership payment page, which will go into production in March. The site is still in development, but a sneak peek is allowed over <em><a href='https://membership.aucss.org.nz/' style='color: var(--text);'>here</a></em>.",
+        tags:
+            [
+                { name: 'Figma', bgcolor:'var(--figma)', icon: 'akar-icons:figma-fill' },
+                { name: 'React', bgcolor:'var(--react)', icon: 'akar-icons:react-fill' },
+                { name: 'JS', bgcolor:'var(--js)', icon: 'akar-icons:javascript-fill' },
+                { name: 'CSS', bgcolor:'var(--css)', icon: 'akar-icons:css-fill' },
+                { name: 'HTML', bgcolor:'var(--html)', icon: 'akar-icons:html-fill' },
+                { name: 'Github', bgcolor:'var(--github)', icon: 'akar-icons:github-fill' },
+            ],
+        model:
+        {
+            newWidth: (screenSmall) ? 180 : 400,
+            backgroundColor: '#7e0202',
+            observer: pageObserver,
+            parent:
+            {
+                src: './src/img/AUCSS/Membership0.png',
+                width: 1640,
+                height: 996,
+                left: 250,
+                top: 0,
+                transform: 'rotateX(-20deg) rotateY(-30deg)',
+            },
+            layers:
+            {
+                Card: {
+                    src: './src/img/AUCSS/Membership1.png',
+                    width: 1640,
+                    height: 996,
+                    left: 0,
+                    top: 0,
+                    translateZ: 20
+                },
+                Loading: {
+                    src: './src/img/AUCSS/Membership2.png',
+                    width: 1640,
+                    height: 996,
+                    left: 0,
+                    top: 0,
+                    translateZ: 40
+                },
+                Checkout: {
+                    src: './src/img/AUCSS/Membership3.png',
+                    width: 1640,
+                    height: 996,
+                    left: 0,
+                    top: 0,
+                    translateZ: 60
+                },
+                Home: {
+                    src: './src/img/AUCSS/Membership4.png',
+                    width: 1640,
+                    height: 996,
+                    left: 0,
+                    top: 0,
+                    translateZ: 80
+                },
+            },
+        },
+    },
+    {
         id: 'golf',
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'BP Golf Academy',
@@ -424,7 +491,7 @@ window.onload = () => {
     // Close sidebar 10s after page load
     setTimeout(() => {
         closeSidebar();
-    }, 2000);
+    }, 5000);
 };
 
 

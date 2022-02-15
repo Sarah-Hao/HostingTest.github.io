@@ -30,9 +30,9 @@
     --secondary-light: normal normal normal 20px "Anton";
     --secondary-medium: normal normal 500 20px "Anton";
     --secondary-bold: normal normal 700 40px "Anton";
-    --tertiary-light: normal normal 400 14px "Roboto Condensed";
-    --tertiary-medium: normal normal 500 13px "Roboto Condensed";
-    --tertiary-bold: normal normal bold 13px "Roboto Condensed";
+    --tertiary-light: normal normal 400 15px "Roboto Condensed";
+    --tertiary-medium: normal normal 500 15px "Roboto Condensed";
+    --tertiary-bold: normal normal bold 15px "Roboto Condensed";
     --tiny-regular: normal normal normal 9px "Roboto Condensed";
 }
 
@@ -323,11 +323,12 @@ footer {
 }
 
 .loading p {
-    font: var(--tertiary-light);
+    font: var(--secondary-light);
     padding: 0 50px 0 50px;
     position: relative;
     top: 0px;
     color: rgb(98, 153, 255);
+    font-size: 35px;
 }
 
 /* ============== Hide scrollbar for Chrome ================== */

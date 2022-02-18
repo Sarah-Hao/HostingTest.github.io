@@ -41,7 +41,7 @@ const projects = [
         title: 'AUCSS',
         subtitle: 'Designer & Frontend Developer',
         state: 'ongoing 02/2022',
-        description: "As a member of the Auckland University Chinese Student Society (AUCSS), I volunteered to design and develop the upcoming membership payment page, which will go into production in March. The site is still in development, but a sneak peek is allowed over <em><a href='https://membership.aucss.org.nz/' style='color: var(--text);'>here</a></em>.",
+        description: "As a member of the Auckland University Chinese Student Society (AUCSS), I volunteered to design and develop the upcoming membership payment page, which will go into production in March. The site is still in development, but a sneak peek is allowed over <em><a href='https://membership.aucss.org.nz/' style='color: var(--text);'>here</a></em>. </br></br> <a href='/src/documents/ZachLetter.pdf' style='color: var(--text);'>President reference letter</a>",
         tags:
             [
                 { name: 'Figma', bgcolor:'var(--figma)', icon: 'akar-icons:figma-fill' },

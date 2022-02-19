@@ -36,6 +36,20 @@
     --tiny-regular: normal normal normal 9px "Roboto Condensed";
 }
 
+.icon_medium {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    color: var(--text);
+}
+
+.icon_small{
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    color: var(--text);
+}
+
 body {
     overflow: hidden;
     position: fixed;
@@ -121,14 +135,28 @@ footer {
 }
 
 .sidebar_Btn {
-    width: 15px;
+    width: 24px;
     height: 100%;
     border-left: 2px solid var(--inactive);
     display: flex;
     justify-content: center;
     align-items: center;
-
     cursor: pointer;
+}
+
+.sidebar_Btn .iconify {
+    font-size: 3em;
+    color: var(--text-light);
+}
+
+.sidebar_Btn .iconify:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.sidebar_Btn .iconify:active{
+    color: white;
+    transform: scale(1.2);
 }
 
 
@@ -200,21 +228,6 @@ footer {
 
 /* ================================================= */
 
-
-
-.icon_medium {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    color: var(--text);
-}
-
-.icon_small{
-    cursor: pointer;
-    width: 13px;
-    height: 13px;
-    color: var(--text);
-}
 
 .pages_container {
     display: flex;

@@ -483,6 +483,7 @@ const timeline = document.querySelector('.timeline');
 
 
 // ------------------- Load Animation ------------------------------
+openSidebar();
 const loading = document.querySelector('.loading');
 
 window.onload = () => {
@@ -491,7 +492,7 @@ window.onload = () => {
     // Close sidebar 10s after page load
     setTimeout(() => {
         closeSidebar();
-    }, 5000);
+    }, 4000);
 };
 
 

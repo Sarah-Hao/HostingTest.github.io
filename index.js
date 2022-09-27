@@ -36,12 +36,44 @@ const pageObserver = new IntersectionObserver(
 // ------------------------ Data ----------------------------------
 const projects = [
     {
+        id: 'datacom',
+        constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
+        title: 'Datacom',
+        subtitle: 'Graduate Developer',
+        state: 'ongoling 03/2022 - now',
+        description: "TBD",
+        tags:
+            [
+                { name: 'React', bgcolor:'var(--react)', icon: 'akar-icons:react-fill' },
+                { name: 'JS', bgcolor:'var(--js)', icon: 'akar-icons:javascript-fill' },
+                { name: 'CSS', bgcolor:'var(--css)', icon: 'akar-icons:css-fill' },
+                { name: 'C#', bgcolor:'var(--csharp)', icon: 'file-icons:c' },
+                { name: 'Devops', bgcolor:'var(--devops)', icon: 'cib:azure-devops' },
+            ],
+        model:
+        {
+            newWidth: (screenSmall) ? 180 : 400,
+            backgroundColor: '#000000',
+            observer: pageObserver,
+            parent:
+            {
+                src: './src/img/Datacom/Datacom0.png',
+                width: 1640,
+                height: 996,
+                left: 250,
+                top: 0,
+                transform: 'rotateX(-20deg) rotateY(-30deg)',
+            },
+            layers: {},
+        },
+    },
+    {
         id: 'aucssMembership',
         constructor: constructProject, // import from 'Module/Constructor/Constructor.js'
         title: 'AUCSS',
         subtitle: 'Designer & Frontend Developer',
-        state: 'ongoing 02/2022',
-        description: "As a member of the Auckland University Chinese Student Society (AUCSS), I volunteered to design and develop the upcoming membership payment page, which will go into production in March. The site is still in development, but a sneak peek is allowed over <em><a href='https://membership.aucss.org.nz/' style='color: var(--text);'>here</a></em>. </br></br> <a href='/src/documents/ZachLetter.pdf' style='color: var(--text);'>President reference letter</a>",
+        state: 'ended 02/2022 - 06/2022',
+        description: "As a member of the Auckland University Chinese Student Society (AUCSS), I volunteered to design and develop the upcoming <em><a href='https://membership.aucss.org.nz/' style='color: var(--text);'>membership payment page</a></em>. </br></br> <a href='/src/documents/ZachLetter.pdf' style='color: var(--text);'>President reference letter</a>",
         tags:
             [
                 { name: 'Figma', bgcolor:'var(--figma)', icon: 'akar-icons:figma-fill' },
